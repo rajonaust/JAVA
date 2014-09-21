@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class RAJON
+{
+	public static void main(String args[])
+	{
+		Scanner sc = new Scanner (System.in); // Create a object for Scanner class
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int sum = a + b ;
+		int sub = a - b ;
+		int mul = a * b ;
+		int div = a / b ;
+		int mod = a % b ;
+		System.out.println("Sum = "+sum);
+		System.out.println("Sub = "+sub);
+		System.out.println("Mul = "+mul);
+		System.out.println("Div = "+div);
+		System.out.println("Mod = "+mod);
+	}
+}
