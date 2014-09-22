@@ -1,5 +1,5 @@
 // Function / Method is a collection of variables and different operations . According to data type it can return a value or nothing .
-// Class is collection of functions / methods , variable .
+// Class is collection of functions / methods , variables .
 // Object refers particular class . So object is also combination of variables , data structures and functions / methods .
 class A
 {
