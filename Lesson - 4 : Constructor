@@ -10,7 +10,7 @@
 
 /* this keyword */
 
-// This keyword refers the global variable and functions of class .
+// This keyword refers the global variables and functions of class .
 
 class A
 {
