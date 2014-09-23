@@ -31,9 +31,9 @@ class Rajon
 {
 	public static void main(String args[])
 	{
-    	A obj1 = new A() ; // Create a object for class A with no parameter .
+    		A obj1 = new A() ; // Create a object for class A with no parameter .
 
-    	A obj2 = new A(50); // Create a object for class A with an integer parameter .
+    		A obj2 = new A(50); // Create a object for class A with an integer parameter .
 	}
 
 }
