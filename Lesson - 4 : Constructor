@@ -27,7 +27,7 @@ class A
     }
 };
 
-class hudai
+class Rajon
 {
 	public static void main(String args[])
 	{
