@@ -1,0 +1,39 @@
+/* Constructor */
+
+// A class constructor is a special member function of a class that is executed whenever create a new objects of that class .
+// A constructor will have exact same name as the class .
+// It does not have any return type at all , not even void .
+// One class can have one or constructors by changing number or data type of arguments .
+// Constructors can be very useful for setting initial values for certain member variables .
+
+/* Java has no direct Destructor method like C++ */
+
+/* this keyword */
+
+// This keyword refers the global variable and functions of class .
+
+class A
+{
+    int x = 100 ;
+    A() // Constructor for class A with no parameter .
+    {
+        System.out.println("Constructor for class A without any parameter .\n");
+    }
+    A(int x) // // Constructor for class A with an integer parameter .
+    {
+        System.out.println("Constructor for class A with an integer parameter .");
+        System.out.println("Global variable value is : " + this.x);
+        System.out.println("Local variable value is : " + x + "\n" );
+    }
+};
+
+class hudai
+{
+	public static void main(String args[])
+	{
+    	A obj1 = new A() ; // Create a object for class A with no parameter .
+
+    	A obj2 = new A(50); // Create a object for class A with an integer parameter .
+	}
+
+}
