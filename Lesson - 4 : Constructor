@@ -2,7 +2,7 @@
 
 // A class constructor is a special member function of a class that is executed whenever create a new objects of that class .
 // A constructor will have exact same name as the class .
-// It does not have any return type at all , not even void .
+// It does not have any return type at all , not even void . So it does not return a value .
 // One class can have one or constructors by changing number or data type of arguments .
 // Constructors can be very useful for setting initial values for certain member variables .
 
