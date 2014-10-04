@@ -1,0 +1,63 @@
+/* Inheritance */
+// Inheritance can be defined as the process where one class's object acquires the properties of another class .
+// By the use of inheritance the information is made manageable in a hierarchical order .
+
+/* Super Class */
+// The class from which a subclass is derived is called a superclass .
+// A superclass may have one or more subclasses .
+
+/* Sub Class */
+// A class derived from another class is called a subclass .
+// A subclass can able to extend only one superclass .
+// A subclass inherits all of the public and protected members of its super class .
+// Whenever a constructor of subclass is called , also it's super class must be called , if the supe class contain at least a constructor and this constructor contain at least one argument .
+
+class memberInfo // Superclass
+{
+protected
+	String name ;
+	int contactNumber ;
+public
+	memberInfo(String a,int b)
+	{
+		name = a ;
+		contactNumber = b ;
+	}
+}
+class Student extends memberInfo // Subclass
+{
+	String id ;
+	Student(String a,int b,String c)
+	{
+		super(a,b); // Called Superclass
+		id = c ;
+	}
+	void info()
+	{
+		System.out.println("Student Name : "+name+" .\nContact No. : "+contactNumber+" .\nID : "+id+" .\n");
+	}
+}
+class Teacher extends memberInfo // Subclass
+{
+	int salary ;
+	Teacher(String a,int b,int c)
+	{
+		super(a,b); // Called Superclass
+		salary = c ;
+	}
+	void info()
+	{
+		System.out.println("Teacher Name : "+name+" .\nContact No. : "+contactNumber+" .\nSalary : "+salary+" tk .\n");
+	}
+}
+class Rajon
+{
+	public static void main(String args[])
+	{
+		Student objStudent = new Student("Rajon Bardhan",1672652816,"11.01.04.122"); // Create object of class Student
+		Teacher objTeacher = new Teacher("Mir Tasreef Nayeem",192070185,50000); // Create object of class Teacher
+
+		objStudent.info();
+		objTeacher.info();
+	}
+}
